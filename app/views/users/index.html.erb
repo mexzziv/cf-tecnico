@@ -1,0 +1,10 @@
+<%= form_with url: "/users/show", method: :get do |form| %>
+  <img class="mb-4" src="https://codigofacilito.com/images/apple-touch-icon-76x76.png" alt="" width="76" height="76">
+  <h1 class="h3 mb-3 fw-normal">Post del Usuario</h1>
+
+  <div class="form-floating margin-bottom">
+    <input type="text" class="form-control" id="floatingInput" placeholder="mexzziv" name="username" required>
+    <label for="floatingInput">Nombre de Usuario</label>
+  </div>
+  <button type="submit" class="btn btn-outline-dark" type="submit">Buscar Posts</button>
+<% end %>

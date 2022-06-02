@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <title>MyApp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Prueba tecnica para el puesto Developer Backend">
+    <meta name="author" content="Mexzziv - Ivan Marquez Escobar">
+    <title>Prueba tecnica Codigo Facilito</title>
+    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <meta name="theme-color" content="#712cf9">
   </head>
-
-  <body>
-    <%= yield %>
+  <body class="text-center">
+    <% flash.each do |key, array_of_strings| %>
+      <div class='alert alert-<%= key %>' role='alert'>
+        <ul>
+          <% array_of_strings.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <main class="form-signin w-100 m-auto">
+      <%= yield %>
+    </main>
   </body>
 </html>
