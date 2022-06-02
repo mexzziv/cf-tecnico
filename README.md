@@ -28,13 +28,13 @@ rails s
 ### Funcionalidad
 Una vez realizado los pasos anteriores en el navegador poner la siguiente direccion [http://127.0.0.1:3000](http://127.0.0.1:3000) donde se vera una vista como la siguiente:
 
-![welcome](https://imgur.com/hVGsvBG)
+![Imgur](https://i.imgur.com/hVGsvBG.png)
 
 Solo ingrese el usuario a buscar en el input de la siguiente manera y dar click en **Buscar Posts**:
-![search](https://imgur.com/1TgdVrn)
+![Imgur](https://i.imgur.com/1TgdVrn.png)
 
 Esto nos dirigira a la vista donde se mostraran los posts del usuario
-![posts](https://imgur.com/UPo0WAH)
+![Imgur](https://i.imgur.com/UPo0WAH.png)
 
 #### Live Demo
 [https://test-cf-mexzziv.herokuapp.com/](https://test-cf-mexzziv.herokuapp.com/)
